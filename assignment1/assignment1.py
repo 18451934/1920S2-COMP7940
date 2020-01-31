@@ -4,9 +4,9 @@ import redis
 
 
 # fill in the following.
-HOST = "redis-11363.c1.asia-northeast1-1.gce.cloud.redislabs.com"
-PWD = "1nOA0St0I7p9pQqu8HkQ18XqDfnoPeoL"
-PORT = "11363" 
+HOST = "redis-19674.c92.us-east-1-3.ec2.cloud.redislabs.com"
+PWD = "WYi2cEXgyPf4qFB5sLBw6qjiEmGwekQH"
+PORT = "19674" 
 
 redis1 = redis.Redis(host = HOST, password = PWD, port = PORT)
 
@@ -20,6 +20,9 @@ while True:
 
    
     # Add your code here
+    def 
+
+
 
 
 
