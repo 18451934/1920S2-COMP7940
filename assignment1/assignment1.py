@@ -28,12 +28,11 @@ while True:
     counter = 0
     
     if redis1.get(msg) is not None:
-        counter = int(redis1.get(msg))
+        counter = 1+ int(redis1.get(msg))
+    else:
+        counter=1   
 
-
-    value = 1 + counter
-    redis1.set(msg, value)
- 
-    
-    print('for ' +str(value)+ ' times')
+    redis1.set(msg, counter)
+     
+    print('for ' +str(counter)+ ' times')
   
