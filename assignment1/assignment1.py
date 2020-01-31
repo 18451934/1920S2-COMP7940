@@ -25,15 +25,15 @@ while True:
 
    
     # Add your code here
-    count = 0
+    counter = 0
     
     if redis1.get(msg) is not None:
-        count = int(redis1.get(msg))
+        counter = int(redis1.get(msg))
 
 
-    value = 1 + count
+    value = 1 + counter
     redis1.set(msg, value)
-
+ 
     
     print('for ' +str(value)+ ' times')
   
